@@ -12,22 +12,13 @@ body {
     line-height: 1.42857143;
     background-color: rgb(238, 218, 252);
     color: #333;
-    background-image: url("../images/top.jpg");
-    background-repeat: round;
     /* background-image: url("../images/351A3125+CMYK.jpg"); */
     background-size: cover;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 2em;
-}
-
-
 .content {
     margin: 0 auto;
-    /*width: 70%;*/
-    background-color: rgba(255,255,255,0.9);
+    width: 95%;
 }
 
 header {
@@ -37,18 +28,16 @@ header {
 footer {
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 60px;
     width: 100%;
     background-color: #af82cc;
     /* padding: 15px 15px; */
 }
 
 header .title {
-    color: white;
-    font-family: "YuGothic", sans-serif;
     text-align: center;
-    font-size: 4rem;
-    line-height: 2em;
+    font-size: 2.4rem;
+    line-height: 3em;
     font-weight: bolder;
     border-bottom: solid;
     border-bottom-color: #af82cc;
@@ -56,10 +45,8 @@ header .title {
 }
 
 address {
-    padding: 0.5em;
     text-align: center;
 }
-
 
 .wrapper {
     position: relative;
@@ -82,83 +69,7 @@ address {
     border: none;
 }
 
-/*マップ表示関係*/
-.ggmap {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-}
- 
-.ggmap iframe,
-.ggmap object,
-.ggmap embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
 /*** 個別のページ ***/
-
-/*index.html*/
-.cover_parent {
-    /*background: linear-gradient(#af82cc, #243992);*/
-    background-color: #af82cc;
-    height: 10%;
-    transform: skew(0deg, 4deg);
-}
-.cover_child {
-    transform: skew(0deg, -4deg);
-    font-size: 3.5vw;
-    color: white;
-    text-align: right;
-    line-height: 1.4em;
-    margin-right: 0.5em;
-    padding: 0.7em;
-    font-weight: bold;
-}
-.cover_child:first-letter {
-    font-size: 5.8vw;
-    }
-
-/*.cover_date {
-    font-size: 3vw;
-    color: white;
-    line-height: 1.3em;
-}*/
-.body_top {
-     background-image: url("../images/top.jpg");
-}
-
-/*qualification.html*/
-#ex_eda {
-    padding: 0.8em;
-}
-#abst {
-    font-weight: bold;
-}
-
-#approach {
-    font-style: italic;
-}
-/*cfp.html*/
-
-#genre {
-    line-height: 1.5em;
-    font-weight: bold;
-    margin: 0 auto;
-}
-
-/*program.html*/
-.conf_program {
-    margin: 0   auto;
-}
-.conf_program th {
-    background-color: #af82cc;
-}
 
 /* comittee.html */
 
@@ -217,13 +128,7 @@ height: 100%;
 /* Small devices (tablets)
   ==========================*/
 
-@media (min-width: 768px) {
-    .content {
-    padding: 0;
-    width: 95%;
-}
-
-}
+@media (min-width: 768px) {}
 
 /* Medium devices (desktops)
   ==========================*/
@@ -236,8 +141,6 @@ height: 100%;
         margin-left: 200px;
     }
     .content {
-        padding: 4em;
-
-        width: 70%;
+        width: 80%;
     }
 }
