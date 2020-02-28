@@ -218,7 +218,12 @@ height: 100%;
 /* Small devices (tablets)
   ==========================*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .content {
+    width: 90%;
+}
+
+}
 
 /* Medium devices (desktops)
   ==========================*/
