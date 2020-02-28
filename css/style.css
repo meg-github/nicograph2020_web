@@ -26,8 +26,7 @@ h2 {
 
 .content {
     margin: 0 auto;
-    padding: 4em;
-    width: 70%;
+    /*width: 70%;*/
     background-color: rgba(255,255,255,0.9);
 }
 
@@ -108,7 +107,7 @@ height: 100%;
 .cover_parent {
     /*background: linear-gradient(#af82cc, #243992);*/
     background-color: #af82cc;
-    height: 250pt;
+    height: 10%;
     transform: skew(0deg, 6deg);
 }
 .cover_child {
@@ -126,7 +125,7 @@ height: 100%;
     }
 
 .cover_date {
-    font-size: 15pt;
+    font-size: 3vw;
     color: white;
     line-height: 1.3em;
 }
@@ -220,7 +219,8 @@ height: 100%;
 
 @media (min-width: 768px) {
     .content {
-    width: 90%;
+    padding: 0;
+    width: 95%;
 }
 
 }
@@ -236,6 +236,8 @@ height: 100%;
         margin-left: 200px;
     }
     .content {
-        width: 80%;
+        padding: 4em;
+
+        width: 70%;
     }
 }
