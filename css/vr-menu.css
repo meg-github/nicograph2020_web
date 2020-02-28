@@ -1,0 +1,132 @@
+/*** ナビゲーション関連 ***/
+.v_nav {
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.4) -30px 0 30px 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+.toggle_menu {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    background: none;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    position: fixed; 
+    z-index: 100;
+}
+
+.toggle_menu i {
+    display: block;
+    font-size: 2.0rem;
+}
+
+.v_nav {
+    position: fixed;
+    left: -200px;
+    top: 0px;
+    bottom: 0px;
+    width: 200px; 
+    background-color: rgba(24, 1, 39, 0.6);
+    /*background: url("../images/sidebar.jpg");*/
+    z-index: 120;
+}
+
+.v_nav__opened {
+    left: 0px !important;
+
+}
+
+.toggle_menu__opened {
+    position: fixed;
+    z-index: 99999;
+}
+
+.toggle_menu__opened i::before {
+    content: "\f053"
+}
+
+.menu {
+    bottom: 0px;
+    top: 100px;
+    position: absolute;
+    overflow-y: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu_label {
+    height: 34px;
+    color: #fff;
+    font-size: 1.9rem;
+}
+
+.menu_item {
+    position: relative;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.menu_link {
+    display: block;
+    overflow: hidden;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 0 15px;
+}
+.fa-gray {
+    color: #A4A4A4;
+}
+
+
+.menu_link:hover, .menu_link:hover .menu_label {
+    color: #000;
+    background: #dddddd;
+}
+
+.nav_label{
+    display: none;
+}
+
+.current{
+    border-bottom: solid;
+    border-color: deeppink;
+}
+
+@media (min-width: 992px) {
+    .toggle_menu {
+        display: none;
+    }
+    .v_nav {
+        left: 0;
+    }
+    .nav_label {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 400;
+        font-size: 2.0rem;
+        color: #fff;
+        text-decoration: none;
+    }    
+ }

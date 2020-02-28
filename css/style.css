@@ -1,0 +1,236 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6em;
+    line-height: 1.42857143;
+    background-color: rgb(238, 218, 252);
+    color: #333;
+    background-image: url("../images/top.jpg");
+    background-repeat: round;
+    /* background-image: url("../images/351A3125+CMYK.jpg"); */
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+.content {
+    margin: 0 auto;
+    padding: 4em;
+    width: 70%;
+    background-color: rgba(255,255,255,0.9);
+}
+
+header {
+    background-color: #af82cc;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #af82cc;
+    /* padding: 15px 15px; */
+}
+
+header .title {
+    color: white;
+    font-family: "YuGothic", sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 2em;
+    font-weight: bolder;
+    border-bottom: solid;
+    border-bottom-color: #af82cc;
+    border-width: 5px;
+}
+
+address {
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+.wrapper {
+    position: relative;
+    transition: all 0.3s ease-out;
+    min-height: 100%;
+    padding-bottom: 100px;
+    color: #000;
+}
+
+.scroll_top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    background-color: #999;
+    opacity: .8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+/*マップ表示関係*/
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/*** 個別のページ ***/
+
+/*index.html*/
+.cover_parent {
+    /*background: linear-gradient(#af82cc, #243992);*/
+    background-color: #af82cc;
+    height: 250pt;
+    transform: skew(0deg, 6deg);
+}
+.cover_child {
+    transform: skew(0deg, -6deg);
+    font-size: 5.5vw;
+    color: white;
+    text-align: right;
+    line-height: 1.3em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+.cover_child:first-letter {
+    font-size: 9.8vw;
+    }
+
+.cover_date {
+    font-size: 15pt;
+    color: white;
+    line-height: 1.3em;
+}
+.body_top {
+     background-image: url("../images/top.jpg");
+}
+
+/*qualification.html*/
+#ex_eda {
+    padding: 0.8em;
+}
+#abst {
+    font-weight: bold;
+}
+
+#approach {
+    font-style: italic;
+}
+/*cfp.html*/
+
+#genre {
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/*program.html*/
+.conf_program {
+    margin: 0   auto;
+}
+.conf_program th {
+    background-color: #af82cc;
+}
+
+/* comittee.html */
+
+#cmember {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+#cmember_item {
+    width: 200px;
+    height: 240px;
+    /* box-shadow: 0 0 0 1px gray; */
+    border: 1px solid gray;
+    margin-left:-1px;
+    margin-top:-1px;
+    text-align: center;
+    
+ 
+}
+
+#cmember_item img {
+    width: 90px;
+    height: 120px;
+    border: 1px solid gray;
+}
+
+.position {
+    font-weight: bolder;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    height: 20px;
+}
+
+.affiliation::before {
+    content: "(";
+}
+
+.affiliation::after {
+    content: ")";
+}
+
+/*** その他，メディアクエリなど ***/
+
+.scroll_top:hover {
+    cursor: pointer;
+}
+
+/* Small devices (tablets)
+  ==========================*/
+
+@media (min-width: 768px) {}
+
+/* Medium devices (desktops)
+  ==========================*/
+
+@media (min-width: 992px) {
+    body {
+        overflow-y: scroll;
+    }
+    .wrapper {
+        margin-left: 200px;
+    }
+    .content {
+        width: 80%;
+    }
+}
