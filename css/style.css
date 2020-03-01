@@ -35,6 +35,7 @@ header {
 }
 
 footer {
+    font-size: 7pt;
     position: absolute;
     bottom: 0;
     height: 100px;
@@ -214,13 +215,24 @@ height: 100%;
     cursor: pointer;
 }
 
+/* Small devices (phones)
+  ==========================*/
+
+@media (min-width: 375px) {
+    .content {
+    padding: 2em;
+    width: 100%;
+}
+
+}
+
 /* Small devices (tablets)
   ==========================*/
 
 @media (min-width: 768px) {
     .content {
-    padding: 0;
-    width: 95%;
+    padding: 3em;
+    width: 80%;
 }
 
 }
