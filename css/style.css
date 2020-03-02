@@ -218,9 +218,9 @@ height: 100%;
 /* Small devices (phones)
   ==========================*/
 
-@media (min-width: 375px) {
+@media (min-width: 370px) {
     .content {
-    padding: 2em;
+    padding: 7%;
     width: 100%;
 }
 
