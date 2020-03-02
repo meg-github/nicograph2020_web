@@ -232,7 +232,7 @@ height: 100%;
 @media (min-width: 768px) {
     .content {
     padding: 7%;
-    width: 90%;
+    width: 100%;
 }
 
 }
