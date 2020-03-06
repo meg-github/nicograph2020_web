@@ -27,6 +27,7 @@ h2 {
 .content {
     margin: 0 auto;
     /*width: 70%;*/
+    padding: 7%;
     background-color: rgba(255,255,255,0.9);
 }
 
@@ -220,7 +221,6 @@ height: 100%;
 
 @media (min-width: 320px) {
     .content {
-    padding: 7%;
     width: 100%;
 }
 
@@ -231,7 +231,6 @@ height: 100%;
 
 @media (min-width: 768px) {
     .content {
-    padding: 7%;
     width: 90%;
 }
 
@@ -248,8 +247,6 @@ height: 100%;
         margin-left: 200px;
     }
     .content {
-        padding: 4em;
-
         width: 84%;
     }
 }
