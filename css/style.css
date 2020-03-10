@@ -160,10 +160,18 @@ div.notice{
     text-align: center;
     font-size: 25px;
     color: #ff5050;
+    border: 2px solid;
 }
 
 .ECQualification strong {
     font-size: 20px;
+}
+.ECQualification table {
+    margin-left: 20px;
+    text-align: left;
+}
+.ECQualification th {
+    font-size: 13px;
 }
 /*cfp.html*/
 
@@ -238,7 +246,7 @@ div.notice{
 /* Small devices (phones)
   ==========================*/
 
-@media (min-width: 250px) {
+@media (min-width: 350px) {
     .content {
     width: 100%;
 }
