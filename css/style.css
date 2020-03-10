@@ -146,6 +146,25 @@ height: 100%;
 #approach {
     font-style: italic;
 }
+
+div.ECQualification{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    word-break: break-all;
+}
+
+div.notice{
+    text-align: center;
+    font-size: 25px;
+    color: #ff5050;
+}
+
+.ECQualification strong {
+    font-size: 20px;
+}
 /*cfp.html*/
 
 #genre {
@@ -219,10 +238,13 @@ height: 100%;
 /* Small devices (phones)
   ==========================*/
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
     .content {
     width: 100%;
 }
+    div.notice{
+     font-size: 3.5vw;
+    }
 
 }
 
@@ -232,6 +254,10 @@ height: 100%;
 @media (min-width: 768px) {
     .content {
     width: 90%;
+}
+
+  div.notice{
+    font-size: 25px;
 }
 
 }
@@ -249,4 +275,6 @@ height: 100%;
     .content {
         width: 84%;
     }
+
 }
+
