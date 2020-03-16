@@ -178,9 +178,18 @@ div.notice{
 /*cfp.html*/
 
 #genre {
+    padding: 0.5em 1em;
+    margin: 1.2em 0;
+    margin-top:-.5em;
+    margin-left: 1em;
+    margin-right: 2em;
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius:10px;/*角の丸み*/
+    word-break: break-all;
     line-height: 1.5em;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 1 auto;
 }
 
 /*program.html*/
