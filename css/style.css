@@ -135,6 +135,12 @@ height: 100%;
      background-image: url("../images/top.jpg");
 }
 
+li.track {
+   list-item: square;  
+   font-size: 1.1em;
+   font-weight: bold; 
+}
+
 /*qualification.html*/
 #ex_eda {
     padding: 0.8em;
@@ -175,6 +181,8 @@ div.notice{
 .ECQualification th {
     font-size: 13px;
 }
+
+
 /*cfp.html*/
 
 #genre {
