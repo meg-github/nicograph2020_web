@@ -13,7 +13,7 @@ body {
     background-color: rgb(238, 218, 252);
     color: #333;
     background-image: url("../images/top.jpg");
-    background-repeat: round;
+    /*background-repeat: round;*/
     /* background-image: url("../images/351A3125+CMYK.jpg"); */
     background-size: cover;
 }
@@ -103,14 +103,30 @@ width: 100%;
 height: 100%;
 }
 
+#blue_rect {
+    padding: 0.5em 1em;
+    margin: 1.2em 0;
+    margin-top:-.5em;
+    margin-left: 1em;
+    margin-right: 2em;
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius:10px;/*角の丸み*/
+    word-break: break-all;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 1 auto;
+}
+
 /*** 個別のページ ***/
 
 /*index.html*/
 .cover_parent {
     /*background: linear-gradient(#af82cc, #243992);*/
     background-color: #af82cc;
-    height: 10%;
+    height: 15vw;
     transform: skew(0deg, 4deg);
+    position: relative;
 }
 .cover_child {
     transform: skew(0deg, -4deg);
@@ -119,18 +135,20 @@ height: 100%;
     text-align: right;
     line-height: 1.4em;
     margin-right: 0.5em;
-    padding: 0.7em;
+    /*padding: 0.3em;*/
+    position: relative;
+    top: 0.7em;
     font-weight: bold;
 }
 .cover_child:first-letter {
     font-size: 5.8vw;
     }
 
-/*.cover_date {
-    font-size: 3vw;
+.cover_date {
+    font-size: 1.5vw;
     color: white;
     line-height: 1.3em;
-}*/
+}
 .body_top {
      background-image: url("../images/top.jpg");
 }
@@ -139,6 +157,13 @@ li.track {
    list-item: square;  
    font-size: 1.1em;
    font-weight: bold; 
+}
+#imp_date{
+    margin-left: 20px;
+    text-align: left;
+}
+#imp_date td{
+    padding: .2em;
 }
 
 /*qualification.html*/
@@ -185,20 +210,7 @@ div.notice{
 
 /*cfp.html*/
 
-#genre {
-    padding: 0.5em 1em;
-    margin: 1.2em 0;
-    margin-top:-.5em;
-    margin-left: 1em;
-    margin-right: 2em;
-    background: #FFF;
-    border: solid 3px #6091d3;/*線*/
-    border-radius:10px;/*角の丸み*/
-    word-break: break-all;
-    line-height: 1.5em;
-    font-weight: bold;
-    margin: 1 auto;
-}
+
 
 /*program.html*/
 .conf_program {
@@ -208,7 +220,7 @@ div.notice{
     background-color: #af82cc;
 }
 
-/* comittee.html */
+/* committee.html */
 
 #cmember {
     display:flex;
@@ -218,7 +230,8 @@ div.notice{
 
 #cmember_item {
     width: 200px;
-    height: 240px;
+/*    height: 240px; */
+    height: 260px; 
     /* box-shadow: 0 0 0 1px gray; */
     border: 1px solid gray;
     margin-left:-1px;
@@ -246,6 +259,7 @@ div.notice{
     font-size: 1.8rem;
     font-weight: bolder;
     height: 20px;
+    margin-bottom: 0.5ex;
 }
 
 .affiliation::before {
@@ -265,13 +279,18 @@ div.notice{
 /* Small devices (phones)
   ==========================*/
 
-@media (min-width: 350px) {
+@media (max-width: 450px) {
     .content {
     width: 100%;
 }
     div.notice{
      font-size: 3.5vw;
     }
+    .cover_date {
+    font-size: 0vw;
+    color: white;
+    line-height: 1.3em;
+}
 
 }
 
