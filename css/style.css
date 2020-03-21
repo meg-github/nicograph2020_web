@@ -121,6 +121,10 @@ height: 100%;
 /*** 個別のページ ***/
 
 /*index.html*/
+.info th{
+    width:50pt;
+
+}
 .cover_parent {
     /*background: linear-gradient(#af82cc, #243992);*/
     background-color: #af82cc;
@@ -207,9 +211,46 @@ div.notice{
     font-size: 13px;
 }
 
+/*keynote.html*/
 
+.keynote_frame p{
+    overflow:hidden;
+}
+
+.keynote_affi img{
+    float: left;
+    width: 90px;
+    height: 120px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+.keynote_affi p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.keynote_affi h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /*cfp.html*/
 
+.schedule{ 
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    color: maroon;
+    border: 2px solid;
+}
+
+.schedule strong{
+    line-height: 2em;
+    font-size: 22px;
+}
+.schedule table{
+    text-align: left;
+    border-spacing: 15px 0;
+}
 
 
 /*program.html*/
