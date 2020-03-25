@@ -104,7 +104,7 @@ height: 100%;
 }
 
 #blue_rect {
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     margin: 1.2em 0;
     margin-top:-.5em;
     margin-left: 1em;
@@ -251,6 +251,24 @@ div.notice{
     text-align: left;
     border-spacing: 15px 0;
 }
+.cathegory {
+    font-size: 18pt;
+    margin-top: 2.5em;
+    margin-bottom: 0em;
+
+}
+
+.genre {
+    width: 90%;
+    padding: 0.5em 1em;
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius:10px;/*角の丸み*/
+    line-height: 1.8em;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+}
 
 
 /*program.html*/
@@ -332,13 +350,16 @@ div.notice{
     color: white;
     line-height: 1.3em;
 }
-
+    .genre td{
+    display: block;
+    width: 100%;
+    }
 }
 
 /* Small devices (tablets)
   ==========================*/
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .content {
     width: 90%;
 }
@@ -346,7 +367,10 @@ div.notice{
   div.notice{
     font-size: 25px;
 }
-
+    .genre td{
+    display: block;
+    width: 100%;
+    }
 }
 
 /* Medium devices (desktops)
