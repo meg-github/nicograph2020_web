@@ -247,7 +247,10 @@ div.notice{
     color: maroon;
     border: 2px solid;
 }
-
+.schedule p{
+    vertical-align: center;
+    font-size: 15px;
+}
 .schedule strong{
     line-height: 2em;
     font-size: 22px;
