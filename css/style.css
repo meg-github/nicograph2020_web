@@ -224,8 +224,8 @@ div.notice{
 
 .keynote_affi img{
     float: left;
-    width: 90px;
-    height: 120px;
+    width: 135px;
+    height: 180px;
     border: 1px solid gray;
     margin-right: 10px;
 }
@@ -383,6 +383,7 @@ div.notice{
     display: block;
     width: 100%;
     }
+
 }
 
 /* Medium devices (desktops)
@@ -397,6 +398,15 @@ div.notice{
     }
     .content {
         width: 84%;
+        overflow:hidden;
+
+    }
+   .keynote_affi img{
+        float: left;
+        width: 270px;
+        height: 360px;
+        border: 1px solid gray;
+        margin-right: 10px;
     }
 
 }
