@@ -217,7 +217,10 @@ div.notice{
 }
 
 /*keynote.html*/
-
+.keynote_frame {
+     display:flex;
+    flex-wrap:wrap;
+}
 .keynote_frame p{
     overflow:hidden;
 }
