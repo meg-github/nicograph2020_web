@@ -220,6 +220,7 @@ div.notice{
 .keynote_frame {
      display:flex;
     flex-wrap:wrap;
+    margin-bottom: 100px;
 }
 .keynote_frame p{
     overflow:hidden;
