@@ -107,18 +107,24 @@ height: 100%;
 }
 
 #blue_rect {
-    padding: 0.5em 2em;
+/*    padding: 0.5em 2em;
     margin: 1.2em 0;
     margin-top:-.5em;
     margin-left: 1em;
-    margin-right: 2em;
+    margin-right: 2em; */
     background: #FFF;
     border: solid 3px #6091d3;/*線*/
     border-radius:10px;/*角の丸み*/
     word-break: break-all;
     line-height: 1.5em;
     font-weight: bold;
-    margin: 1 auto;
+/*    margin: 10em auto; */
+    height: 10.3em;
+    overflow: auto;
+}
+
+.table_reg {
+    margin: auto;
 }
 
 /*** 個別のページ ***/
@@ -126,6 +132,7 @@ height: 100%;
 /*index.html*/
 .info th{
     width:50pt;
+    vertical-align: top;
 
 }
 .cover_parent {
@@ -214,6 +221,11 @@ div.notice{
 }
 .ECQualification th {
     font-size: 13px;
+}
+
+/* registration.html */
+.reg-table {
+    margin: 20px 10px;
 }
 
 /*keynote.html*/
