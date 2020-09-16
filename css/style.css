@@ -223,6 +223,10 @@ div.notice{
     font-size: 13px;
 }
 
+.sponsor{
+    text-align: center;
+    font-size: 20px;
+}
 /* registration.html */
 .reg-table {
     margin: 20px 10px;
@@ -305,6 +309,99 @@ div.notice{
 }
 .conf_program th {
     background-color: #af82cc;
+}
+
+.fcont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#cont1{
+   display: grid;
+   grid-template-columns: 115px 1fr;
+/*   grid-template-rows: repeat(52, minmax(27px, 1fr));*/
+   grid-template-rows: repeat(51, 20px);
+   grid-auto-flow: column; 
+   border-top: 1px solid;
+   border-left: 1px solid;
+   flex-basis: 300px;
+   margin: 10px 10px 10px 10px;
+}
+#cont2{
+    display: grid;
+    grid-template-columns: 115px 1fr 1fr;
+    /*   grid-template-rows: repeat(52, minmax(27px, 1fr));*/
+    grid-template-rows: repeat(51, 20px);
+    grid-auto-flow: column; 
+    border-top: 1px solid;
+    border-left: 1px solid;
+    flex-basis: 350px;
+    margin: 10px 10px 10px 10px;
+}
+ #cont3{
+    display: grid;
+    grid-template-columns: 115px 1fr 1fr;
+    /*   grid-template-rows: repeat(52, minmax(27px, 1fr));*/
+    grid-template-rows: repeat(51, 20px);
+    grid-auto-flow: column; 
+    border-top: 1px solid;
+    border-left: 1px solid;
+    flex-basis: 350px;
+    margin: 10px 10px 10px 10px;
+}
+.gitem_d{
+    background: #bc74e8;
+    color: white;
+}
+.gitem_t1{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bc74e8;
+    color: white;
+}
+.gitem_t2{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bc74e8;
+    color: white;
+}
+.gitem_t3{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bc74e8;
+    color: white;
+}
+
+.gitem_1{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gitem_2{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gitem_3{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* committee.html */
