@@ -445,6 +445,19 @@ display: block;
     }
     
 }
+.session li{
+    margin-bottom: 10px;
+}
+.session div{
+/*    font-weight: bold; */
+}
+.poster li{
+    margin-bottom: 10px;
+}
+.exhibition li{
+    margin-bottom: 10px;
+}
+
 /* committee.html */
 
 #cmember {
