@@ -445,17 +445,37 @@ display: block;
     }
     
 }
-.session li{
+
+.circle {
+    display: inline-block;
+    width        : 13px;
+    height       : 13px;
+    background   : #990000;
+    border-radius: 50%;
+}
+.date{
+    font-weight: normal;
+}
+
+.session li, .poster li, .exhibition li{
     margin-bottom: 10px;
 }
-.session div{
-/*    font-weight: bold; */
+.session div, .poster div, .exhibition div{
+    font-weight: bold; 
 }
-.poster li{
-    margin-bottom: 10px;
+.session span, .poster span, .exhibition span{
+    display: inline-block;
+    width: 60px;
 }
-.exhibition li{
-    margin-bottom: 10px;
+.session span::before, .poster span::before, .exhibition span::before {
+    content: "(";
+}
+
+.session span::after, .poster span::after, .exhibition span::after{
+    content: ")";
+}
+.session small, .poster small, .exhibition small{
+    padding-left: 60px;
 }
 
 /* committee.html */
